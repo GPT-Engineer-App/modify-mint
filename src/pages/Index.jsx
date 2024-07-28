@@ -5,6 +5,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { ThemeToggle } from "@/components/theme-toggle";
 import BlogSection from "./BlogSection";
 import HeroSection from "@/components/HeroSection";
+import Footer from "./Footer";
 
 const Index = () => {
   return (
@@ -65,20 +66,7 @@ const Index = () => {
       </main>
 
       {/* Footer */}
-      <footer className="bg-background py-4 relative overflow-hidden">
-        <div className="absolute inset-0 z-0">
-          <AspectRatio ratio={16 / 3}>
-            <img
-              src="/ai-footer.png"
-              alt="AI-powered future"
-              className="object-cover w-full h-full opacity-30"
-            />
-          </AspectRatio>
-        </div>
-        <div className="container mx-auto px-4 text-center relative z-10">
-          <p className="text-foreground">© 2023 AI Innovators - Shaping the Future with Artificial Intelligence</p>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 };
