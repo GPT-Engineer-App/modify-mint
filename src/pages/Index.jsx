@@ -4,22 +4,14 @@ import { AspectRatio } from "@/components/ui/aspect-ratio";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { ThemeToggle } from "@/components/theme-toggle";
 import BlogSection from "./BlogSection";
+import HeroSection from "@/components/HeroSection";
 
 const Index = () => {
   return (
     <div className="flex flex-col min-h-screen">
       {/* Header */}
-      <header className="bg-background py-4 relative overflow-hidden">
-        <div className="absolute inset-0 z-0">
-          <AspectRatio ratio={16 / 5}>
-            <img
-              src="/ai-banner.png"
-              alt="AI-powered technology"
-              className="object-cover w-full h-full opacity-50"
-            />
-          </AspectRatio>
-        </div>
-        <div className="container mx-auto px-4 relative z-10 flex justify-between items-center">
+      <header className="bg-background py-4 absolute top-0 left-0 right-0 z-10">
+        <div className="container mx-auto px-4 flex justify-between items-center">
           <h1 className="text-2xl font-bold text-foreground">AI Innovators</h1>
           <nav className="flex items-center space-x-4">
             <Link to="/" className="text-foreground hover:text-primary hover:underline">Home</Link>
@@ -30,25 +22,11 @@ const Index = () => {
         </div>
       </header>
 
+      {/* Hero Section */}
+      <HeroSection />
+
       {/* Main Content */}
       <main className="flex-grow container mx-auto px-4 py-8">
-        <div className="flex flex-col md:flex-row items-center gap-8 mb-16">
-          <div className="md:w-1/2">
-            <h2 className="text-3xl font-semibold mb-4 text-foreground">Revolutionizing the Future with AI</h2>
-            <p className="mb-6 text-foreground">Explore the cutting-edge world of artificial intelligence and its transformative impact on industries, society, and our daily lives.</p>
-            <Button>Discover AI Solutions</Button>
-          </div>
-          <Card className="md:w-1/2 overflow-hidden">
-            <AspectRatio ratio={16 / 9}>
-              <img
-                src="/ai-visualization.png"
-                alt="AI visualization"
-                className="object-cover w-full h-full"
-              />
-            </AspectRatio>
-          </Card>
-        </div>
-
         {/* About AI Section */}
         <section id="about" className="mb-16">
           <h2 className="text-3xl font-semibold mb-8 text-center">About Artificial Intelligence</h2>
