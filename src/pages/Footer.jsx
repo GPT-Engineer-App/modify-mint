@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <footer className="bg-black text-white py-16">
       <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
             <h3 className="text-xl font-semibold mb-4">AI Innovators</h3>
             <p className="mb-4">Shaping the Future with Artificial Intelligence</p>
@@ -15,7 +15,16 @@ const Footer = () => {
             <ul className="space-y-2">
               <li><Link to="/" className="hover:text-primary hover:underline">Home</Link></li>
               <li><Link to="#about" className="hover:text-primary hover:underline">About AI</Link></li>
+              <li><Link to="#services" className="hover:text-primary hover:underline">Our Services</Link></li>
               <li><Link to="#blog" className="hover:text-primary hover:underline">AI Insights</Link></li>
+            </ul>
+          </div>
+          <div>
+            <h4 className="text-lg font-semibold mb-4">Our Services</h4>
+            <ul className="space-y-2">
+              <li><Link to="#services" className="hover:text-primary hover:underline">Privacy and Security</Link></li>
+              <li><Link to="#services" className="hover:text-primary hover:underline">Custom LLM</Link></li>
+              <li><Link to="#services" className="hover:text-primary hover:underline">AI Insurance</Link></li>
             </ul>
           </div>
           <div>
