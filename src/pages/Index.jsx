@@ -1,8 +1,9 @@
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
-import { Card } from "@/components/ui/card";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { ThemeToggle } from "@/components/theme-toggle";
+import BlogSection from "./BlogSection";
 
 const Index = () => {
   return (
@@ -29,7 +30,7 @@ const Index = () => {
 
       {/* Main Content */}
       <main className="flex-grow container mx-auto px-4 py-8">
-        <div className="flex flex-col md:flex-row items-center gap-8">
+        <div className="flex flex-col md:flex-row items-center gap-8 mb-16">
           <div className="md:w-1/2">
             <h2 className="text-3xl font-semibold mb-4 text-foreground">Welcome to Bare Bones App</h2>
             <p className="mb-6 text-foreground">This is a minimal web application template. Start building your app by modifying this structure.</p>
@@ -45,6 +46,9 @@ const Index = () => {
             </AspectRatio>
           </Card>
         </div>
+
+        {/* Blog Section */}
+        <BlogSection />
       </main>
 
       {/* Footer */}
