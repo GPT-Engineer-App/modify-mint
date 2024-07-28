@@ -14,7 +14,10 @@ const Index = () => {
       {/* Header */}
       <header className="bg-background py-4 absolute top-0 left-0 right-0 z-10">
         <div className="container mx-auto px-4 flex justify-between items-center">
-          <h1 className="text-2xl font-bold text-foreground">AI Innovators</h1>
+          <div className="flex items-center">
+            <img src="/ai-innovators-logo.png" alt="AI Innovators Logo" className="h-12 mr-4" />
+            <h1 className="text-2xl font-bold text-foreground">AI Innovators</h1>
+          </div>
           <nav className="flex items-center space-x-4">
             <Link to="/" className="text-foreground hover:text-primary hover:underline">Home</Link>
             <Link to="#about" className="text-foreground hover:text-primary hover:underline">About AI</Link>

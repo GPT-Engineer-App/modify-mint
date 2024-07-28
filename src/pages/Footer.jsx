@@ -6,6 +6,7 @@ const Footer = () => {
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
+            <img src="/ai-innovators-logo.png" alt="AI Innovators Logo" className="w-32 mb-4" />
             <h3 className="text-xl font-semibold mb-4">AI Innovators</h3>
             <p className="mb-4">Shaping the Future with Artificial Intelligence</p>
             <p>© 2023 AI Innovators. All rights reserved.</p>

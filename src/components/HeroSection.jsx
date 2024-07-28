@@ -12,6 +12,7 @@ const HeroSection = () => {
         />
       </AspectRatio>
       <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center text-white p-8">
+        <img src="/ai-innovators-logo.png" alt="AI Innovators Logo" className="w-64 mb-8" />
         <h1 className="text-4xl md:text-6xl font-bold mb-4 text-center">
           Revolutionizing the Future with AI
         </h1>
