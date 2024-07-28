@@ -5,6 +5,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { ThemeToggle } from "@/components/theme-toggle";
 import BlogSection from "./BlogSection";
 import HeroSection from "@/components/HeroSection";
+import ServicesSection from "./ServicesSection";
 import Footer from "./Footer";
 
 const Index = () => {
@@ -17,6 +18,7 @@ const Index = () => {
           <nav className="flex items-center space-x-4">
             <Link to="/" className="text-foreground hover:text-primary hover:underline">Home</Link>
             <Link to="#about" className="text-foreground hover:text-primary hover:underline">About AI</Link>
+            <Link to="#services" className="text-foreground hover:text-primary hover:underline">Our Services</Link>
             <Link to="#blog" className="text-foreground hover:text-primary hover:underline">AI Insights</Link>
             <ThemeToggle />
           </nav>
@@ -27,9 +29,9 @@ const Index = () => {
       <HeroSection />
 
       {/* Main Content */}
-      <main className="flex-grow container mx-auto px-4 py-8">
+      <main className="flex-grow">
         {/* About AI Section */}
-        <section id="about" className="mb-16">
+        <section id="about" className="py-16 container mx-auto px-4">
           <h2 className="text-3xl font-semibold mb-8 text-center">About Artificial Intelligence</h2>
           <div className="grid md:grid-cols-3 gap-8">
             <Card>
@@ -58,6 +60,9 @@ const Index = () => {
             </Card>
           </div>
         </section>
+
+        {/* Services Section */}
+        <ServicesSection />
 
         {/* Blog Section */}
         <section id="blog">
